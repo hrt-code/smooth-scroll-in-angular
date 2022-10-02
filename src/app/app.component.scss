@@ -1,0 +1,56 @@
+$angular-color:#bd002e;
+
+.container {
+    width: 1200px;
+    background-color: #f2f2f2;
+    margin: auto;
+    padding: 20px;
+
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 20px;
+
+        span {
+            color: $angular-color;
+        }
+    }
+
+    .content {
+        font-size: 1.5rem;
+    }
+}
+
+
+.smooth-scroll {
+
+    display: flex;
+    position: fixed;
+    bottom: 25px;
+    left: 20px;
+    flex-direction: column;
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: $angular-color;
+        color: white;
+        margin: 3px 3px;
+        height: 35px;
+        width: 38px;
+        outline: none;
+        opacity: 0.35;
+        z-index: 1001;
+        transition: 200ms;
+        font-size: 20px;
+        cursor: pointer;
+        
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+
+}
